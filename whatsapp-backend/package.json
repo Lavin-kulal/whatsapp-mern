@@ -2,7 +2,7 @@
   "name": "whatsapp-backend",
   "version": "1.0.0",
   "description": "WhatsApp Clone Backend - Express.js API with MongoDB and Pusher",
-  "main": "server.js",
+  "main": "server.ts",
   "engines": {
     "node": ">=16.0.0"
   },
