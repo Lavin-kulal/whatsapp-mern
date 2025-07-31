@@ -1,27 +1,40 @@
 {
   "name": "whatsapp-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "WhatsApp Clone Backend - Express.js API with MongoDB and Pusher",
   "main": "server.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node server.ts"
+    "start": "ts-node server.ts",
+    "dev": "ts-node --watch server.ts",
+    "build": "tsc",
+    "build:start": "npm run build && node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Laveen kumar",
+  "keywords": [
+    "whatsapp",
+    "mern",
+    "express",
+    "mongodb",
+    "pusher",
+    "realtime"
+  ],
+  "author": "Laveen Kumar <laveenk0032@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mongoose": "^8.16.5",
-    "pusher": "^5.2.0"
+    "pusher": "^5.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0"
   }
 }
