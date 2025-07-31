@@ -24,8 +24,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://your-app.netlify.app", // Replace with your actual Netlify URL
-      "https://whatsapp-clone-laveen.netlify.app", // Example - update this
+      "https://chimerical-faun-d43434.netlify.app/",
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
