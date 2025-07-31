@@ -6,6 +6,7 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "homepage": "https://whatsapp-mern-3.onrender.com",
   "scripts": {
     "start": "ts-node server.ts",
     "dev": "ts-node --watch server.ts",
