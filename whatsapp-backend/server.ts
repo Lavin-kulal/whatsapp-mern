@@ -19,7 +19,19 @@ const pusher = new Pusher({
 console.log("pusher", pusher);
 //middlewares
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://your-app.netlify.app", // Replace with your actual Netlify URL
+      "https://whatsapp-clone-laveen.netlify.app", // Example - update this
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 //db connection
 const connection_url = process.env.connection_url;
